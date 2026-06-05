@@ -18,7 +18,8 @@ Personal monorepo for hardware tinkering and invention. Projects are organized b
 | Project | Description |
 |---|---|
 | [led_status](./pico2w/led_status/) | Reusable LED state module. Runs on a separate thread so it never blocks the main program. Supports solid on, solid off, and blink modes. |
-
+| [INIT_New_Pico2W](./pico2w/INIT_New_Pico2W.md) | First-time setup guide for the Pico 2 W on macOS. Covers MicroPython firmware install, serial connection, and onboard LED verification. |
+ 
 
 ## Repo Structure
 
