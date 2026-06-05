@@ -82,11 +82,7 @@
 
     The onboard LED should turn off.
 
-10. Exit the `screen` session by pressing these keys in order:
-
-    - Hold `Ctrl` and press `A`, then release both keys
-    - Press `K`
-    - Press `Y`
+10. Exit the `screen` session: press `Ctrl + A`, then `K`, then `Y`.
 
     You should return to your normal terminal prompt, for example:
 
