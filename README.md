@@ -29,6 +29,7 @@ pi-projects/
 |- shared/          # Code that works across multiple devices
 |- README.md
 |- DOCS_STYLE_GUIDE.md
+|- TEMPLATE.md
 |- .gitignore
 |- LICENSE
 ```
@@ -36,7 +37,7 @@ pi-projects/
 
 ## Documentation
 
-See [DOCS_STYLE_GUIDE.md](./DOCS_STYLE_GUIDE.md) for formatting and writing conventions used across this repo.
+See [DOCS_STYLE_GUIDE.md](./DOCS_STYLE_GUIDE.md) for formatting and writing conventions used across this repo. Use [TEMPLATE.md](./TEMPLATE.md) for new projects or instructions.
 
 
 ## Environment
