@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "author": "Kristina Groeger",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard",
+      "id": "bb1",
+      "top": -11.4,
+      "left": -216.4,
+      "attrs": { "color": "#eeefed" }
+    },
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -262.35, "left": 157.2, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -207.77, "left": -224, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 90.65,
+      "left": -59,
+      "rotate": 180,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:VSS", "bb1:1t.a", "green", [ "v0" ] ],
+    [ "lcd1:VDD", "bb1:2t.a", "green", [ "v0" ] ],
+    [ "lcd1:V0", "bb1:3t.a", "green", [ "v0" ] ],
+    [ "lcd1:RS", "bb1:4t.a", "green", [ "v0" ] ],
+    [ "lcd1:RW", "bb1:5t.a", "green", [ "v0" ] ],
+    [ "lcd1:E", "bb1:6t.a", "green", [ "v0" ] ],
+    [ "lcd1:D0", "bb1:7t.a", "green", [ "v0" ] ],
+    [ "lcd1:D1", "bb1:8t.a", "green", [ "v0" ] ],
+    [ "lcd1:D2", "bb1:9t.a", "green", [ "v0" ] ],
+    [ "lcd1:D3", "bb1:10t.a", "green", [ "v0" ] ],
+    [ "lcd1:D4", "bb1:11t.a", "green", [ "v0" ] ],
+    [ "lcd1:D5", "bb1:12t.a", "green", [ "v0" ] ],
+    [ "lcd1:D6", "bb1:13t.a", "green", [ "v0" ] ],
+    [ "lcd1:D7", "bb1:14t.a", "green", [ "v0" ] ],
+    [ "lcd1:A", "bb1:15t.a", "green", [ "v0" ] ],
+    [ "lcd1:K", "bb1:16t.a", "green", [ "v0" ] ],
+    [ "bb1:1t.b", "bb1:bn.1", "blue", [ "v0" ] ],
+    [ "bb1:2t.b", "bb1:bp.1", "red", [ "v0" ] ],
+    [ "bb1:3t.b", "bb1:bn.3", "blue", [ "v0" ] ],
+    [ "bb1:5t.b", "bb1:bn.5", "blue", [ "v0" ] ],
+    [ "bb1:16t.b", "bb1:bn.16", "blue", [ "v0" ] ],
+    [ "bb1:17t.b", "bb1:bp.17", "red", [ "v0" ] ],
+    [ "r1:2", "bb1:15t.b", "purple", [ "h-56.4", "v-104.4" ] ],
+    [ "r1:1", "bb1:17t.b", "purple", [ "v0" ] ],
+    [ "bb1:4t.b", "pico:GP2", "orange", [ "v-87.6", "h267.2", "v-182.4" ] ],
+    [ "bb1:6t.b", "pico:GP3", "orange", [ "v-68.4", "h228.8", "v-192" ] ],
+    [ "bb1:11t.b", "pico:GP4", "yellow", [ "v-20.4", "h238.4", "v-230.4" ] ],
+    [ "bb1:12t.b", "pico:GP5", "yellow", [ "v-30", "h219.2", "v-211.2" ] ],
+    [ "bb1:13t.b", "pico:GP6", "yellow", [ "v-39.6", "h200", "v-182.4" ] ],
+    [ "bb1:14t.b", "pico:GP7", "yellow", [ "v-49.2", "h180.8", "v-163.2" ] ],
+    [ "pico:VBUS", "bb1:bp.40", "red", [ "h0" ] ],
+    [ "pico:GND.8", "bb1:bn.41", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
